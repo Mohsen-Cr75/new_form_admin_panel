@@ -1,4 +1,3 @@
-
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,11 +14,8 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
             resultSearchModel:
                 ResultSearchModel(status: 0, message: "", itemList: []))) {
     ///به جای string باید USecase باشه.
-    String usecase;
 
     on<changeSearchName>((event, emit) {
-      String curentSearch = state.searchName;
-
       ///toUpperCaseهمون api که توی usecase هست رو باید استفاده کنیم
       // var result = usecase.toUpperCase();
 

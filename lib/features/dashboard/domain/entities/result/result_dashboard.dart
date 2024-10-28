@@ -1,7 +1,4 @@
 import '../../../../search/data/models/items/model_default_item.dart';
-import '../items/default_item_dashboard.dart';
-
-
 
 class ResultDashboard {
   final int status;

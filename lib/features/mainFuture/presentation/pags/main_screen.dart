@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../core/Dimensions/responsive.dart';
 import '../../../Drawer/presentation/pages/drawer_page.dart';
-import '../../../../pages/dashbord/dashboard_screen.dart';
+import '../../../dashboard/presentation/pages/dashboard_screen.dart';
 
 class MainScreen extends StatelessWidget {
   @override

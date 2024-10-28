@@ -1,14 +1,13 @@
-
+import './core/injection_container/injection_container.dart' as di;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_ui/features/mainFuture/presentation/pags/main_screen.dart';
-import 'package:responsive_ui/service_locator.dart';
-
 import 'core/const/constants.dart';
 import 'features/search/presentation/bloc/search_bloc.dart';
 
-void main() {
-  setupLocator();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   runApp(const MyApp());
 }
 

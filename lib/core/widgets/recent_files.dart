@@ -1,9 +1,7 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../core/const/constants.dart';
+import '../const/constants.dart';
 
 class RecentFiles extends StatelessWidget {
   const RecentFiles({
@@ -43,7 +41,7 @@ class RecentFiles extends StatelessWidget {
               ],
               rows: List.generate(
                 demoRecentFiles.length,
-                    (index) => recentFileDataRow(demoRecentFiles[index]),
+                (index) => recentFileDataRow(demoRecentFiles[index]),
               ),
             ),
           ),

@@ -1,4 +1,4 @@
-import '../../data/models/result/model_resultSearch.dart';
+import '../../data/models/result/model_result_search.dart';
 import '../repositories/dashboard_repository.dart';
 
 class GetDashboard {
@@ -7,6 +7,6 @@ class GetDashboard {
   final DashboardRepository repository;
 
   Future<ResultDashboardModel> call() async {
-    return  repository.getDashboard();
+    return repository.getDashboard();
   }
 }

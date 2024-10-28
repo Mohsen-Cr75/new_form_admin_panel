@@ -1,14 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-
 import 'package:flutter/material.dart';
-import 'package:responsive_ui/pages/dashbord/widgets/header.dart';
-import 'package:responsive_ui/pages/dashbord/widgets/my_files.dart';
-import 'package:responsive_ui/pages/dashbord/widgets/recent_files.dart';
+import 'package:responsive_ui/core/widgets/header.dart';
+import 'package:responsive_ui/core/widgets/my_files.dart';
+import 'package:responsive_ui/core/widgets/recent_files.dart';
 
-import '../../core/const/constants.dart';
-import '../../core/Dimensions/responsive.dart';
-import '../../features/storage_details/presentation/pages/storage_details_page.dart';
+import '../../../../core/const/constants.dart';
+import '../../../../core/Dimensions/responsive.dart';
+import '../../../storage_details/presentation/pages/storage_details_page.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override

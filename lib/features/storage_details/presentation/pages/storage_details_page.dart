@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../core/const/constants.dart';
 import '../../../../core/widgets/chart.dart';
-import '../../../../pages/dashbord/widgets/storage_info_card.dart';
+import '../../../../core/widgets/storage_info_card.dart';
 
 class StorageDetailsPage extends StatelessWidget {
   const StorageDetailsPage({

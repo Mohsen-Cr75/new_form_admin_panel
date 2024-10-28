@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../core/const/constants.dart';
-import '../../../core/Dimensions/responsive.dart';
+import '../const/constants.dart';
+import '../Dimensions/responsive.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -17,8 +16,7 @@ class Header extends StatelessWidget {
         if (!Responsive.isDesktop(context))
           IconButton(
             icon: Icon(Icons.menu),
-            onPressed: () {
-            },
+            onPressed: () {},
             // onPressed: context.read<MenuAppController>().controlMenu,
           ),
         if (!Responsive.isMobile(context))
@@ -62,7 +60,7 @@ class ProfileCard extends StatelessWidget {
           if (!Responsive.isMobile(context))
             Padding(
               padding:
-              const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+                  const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
               child: Text("Mohsen m"),
             ),
           Icon(Icons.keyboard_arrow_down),

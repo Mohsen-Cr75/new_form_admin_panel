@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
-import '../../../core/const/constants.dart';
-import '../../../core/Dimensions/responsive.dart';
-import '../../../core/widgets/file_info_card.dart';
+import '../const/constants.dart';
+import '../Dimensions/responsive.dart';
+import 'file_info_card.dart';
 
 class MyFiles extends StatelessWidget {
   const MyFiles({
@@ -27,7 +26,7 @@ class MyFiles extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding * 1.5,
                   vertical:
-                  defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
+                      defaultPadding / (Responsive.isMobile(context) ? 2 : 1),
                 ),
               ),
               onPressed: () {},

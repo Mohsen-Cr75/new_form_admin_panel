@@ -1,6 +1,5 @@
 import '../../../../search/data/models/items/model_default_item.dart';
-import '../../../domain/entities/items/default_item_dashboard.dart';
-import '../../../domain/entities/result/resultDashboard.dart';
+import '../../../domain/entities/result/result_dashboard.dart';
 
 class ResultDashboardModel extends ResultDashboard {
   @override
@@ -16,7 +15,6 @@ class ResultDashboardModel extends ResultDashboard {
     required this.itemList,
   }) : super(status: status, message: message, itemList: itemList);
 
-
   ResultDashboardModel copyWith({
     int? status,
     String? message,
@@ -25,7 +23,7 @@ class ResultDashboardModel extends ResultDashboard {
     return ResultDashboardModel(
       status: status ?? this.status,
       message: message ?? this.message,
-      itemList: itemList??this.itemList  ,
+      itemList: itemList ?? this.itemList,
     );
   }
 
